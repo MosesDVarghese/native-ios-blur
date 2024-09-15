@@ -44,7 +44,6 @@ const AppCard = ({
         text={action}
         textColor={Colors[colorScheme ?? "light"].buttonText}
       />
-      <View style={{ marginRight: 10 }} />
     </View>
   );
 };
@@ -65,13 +64,12 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     borderWidth: 1,
     marginRight: 10,
-    marginLeft: 10,
   },
   appText: {
     flex: 1,
     flexDirection: "column",
     marginRight: 10,
-    minWidth: 150,
+    minWidth: 190,
   },
   appSubtitle: {
     color: "#909090",

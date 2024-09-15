@@ -7,7 +7,7 @@ import { Colors } from "@/constants/Colors";
 import { useColorScheme } from "@/hooks/useColorScheme";
 
 const AppCard = ({
-  appImgUrl = require("@/assets/images/react-logo.png"),
+  appImgUrl = require("@/assets/images/dev.png"),
   title = "A long title",
   subtitle = "a kinda longer desc over here",
   action = "Get",
@@ -24,7 +24,10 @@ const AppCard = ({
       <View>
         <Image
           source={appImgUrl}
-          style={styles.appIcon}
+          style={[
+            styles.appIcon,
+            { borderColor: Colors[colorScheme ?? "light"].background },
+          ]}
           contentFit="cover"
           transition={100}
         />

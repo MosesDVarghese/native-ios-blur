@@ -1,3 +1,4 @@
+import { ThemedText } from "@/components/ThemedText";
 import { StackScreenWithSearchBar } from "@/constants/layout";
 import { Stack } from "expo-router";
 import { View, StyleSheet } from "react-native";
@@ -9,8 +10,11 @@ const Tab1Layout = () => {
         <Stack.Screen
           name="index"
           options={{
-            ...StackScreenWithSearchBar,
-            headerTitle: "Search",
+            headerShown: true,
+            headerLargeTitle: true,
+            headerTransparent: true,
+            headerBlurEffect: "prominent",
+            headerTitle: "Today",
           }}
         />
       </Stack>

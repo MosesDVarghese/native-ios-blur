@@ -9,8 +9,11 @@ const Tab2Layout = () => {
         <Stack.Screen
           name="index"
           options={{
-            ...StackScreenWithSearchBar,
-            headerTitle: "Search",
+            headerShown: true,
+            headerLargeTitle: true,
+            headerTransparent: true,
+            headerBlurEffect: "prominent",
+            headerTitle: "Games",
           }}
         />
       </Stack>

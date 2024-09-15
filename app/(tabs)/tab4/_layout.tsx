@@ -10,7 +10,7 @@ const Tab4Layout = () => {
           name="index"
           options={{
             ...StackScreenWithSearchBar,
-            headerTitle: "Search",
+            headerTitle: "Arcade",
           }}
         />
       </Stack>

@@ -8,19 +8,14 @@ const _layout = () => {
   return (
     <Tabs
       screenOptions={{
-        // tabBarActiveTintColor: colors.primary,
-        tabBarLabelStyle: {
-          fontWeight: "500",
-        },
         headerShown: false,
         tabBarStyle: {
           position: "absolute",
           borderTopWidth: 0,
-          paddingTop: 8,
         },
         tabBarBackground: () => (
           <BlurView
-            intensity={95}
+            intensity={100}
             style={{
               ...StyleSheet.absoluteFillObject,
               overflow: "hidden",

@@ -4,6 +4,7 @@ import { ThemedText } from "./ThemedText";
 
 import { Colors } from "@/constants/Colors";
 import { useColorScheme } from "@/hooks/useColorScheme";
+import AppCard from "./AppCard";
 
 export type ContentCardProps = {
   variant?: "1" | "2" | "3" | "4" | "5";
@@ -34,14 +35,14 @@ const ContentCard = () => {
         <ThemedText type="defaultSemiBold" style={{ color: "#c1c1c1" }}>
           Our Favorites
         </ThemedText>
-        <ThemedText type="title" style={{ fontSize: 27 }}>
+        <ThemedText type="title" style={{ fontSize: 27, marginBottom: 10 }}>
           Top iPhone apps this week
         </ThemedText>
         {/* AppCard */}
-        <ThemedText>AppCard</ThemedText>
-        <ThemedText>AppCard</ThemedText>
-        <ThemedText>AppCard</ThemedText>
-        <ThemedText>AppCard</ThemedText>
+        <AppCard />
+        <AppCard />
+        <AppCard />
+        <AppCard />
       </View>
     </View>
   );
@@ -53,7 +54,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 10,
-    borderWidth: 1,
     borderRadius: 15,
     marginBottom: 20,
   },

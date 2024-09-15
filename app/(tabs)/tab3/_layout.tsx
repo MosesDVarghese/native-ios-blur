@@ -10,7 +10,7 @@ const Tab3Layout = () => {
           name="index"
           options={{
             ...StackScreenWithSearchBar,
-            headerTitle: "Search",
+            headerTitle: "Apps",
           }}
         />
       </Stack>

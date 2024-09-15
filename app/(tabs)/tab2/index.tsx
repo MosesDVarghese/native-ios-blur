@@ -1,10 +1,21 @@
-import { StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 import React from "react";
+import ContentCard from "@/components/ContentCard";
 
 const Tab2 = () => {
   return (
-    <View>
-      <Text>Tab2</Text>
+    <View style={{ flex: 1, marginBottom: 80 }}>
+      <ScrollView
+        contentInsetAdjustmentBehavior="automatic"
+        style={{ paddingHorizontal: 24 }}
+      >
+        <ContentCard />
+        <ContentCard />
+        <ContentCard />
+        <ContentCard />
+        <ContentCard />
+        <ContentCard />
+      </ScrollView>
     </View>
   );
 };

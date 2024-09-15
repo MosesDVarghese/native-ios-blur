@@ -1,11 +1,10 @@
 import { StackScreenWithSearchBar } from "@/constants/layout";
-import { defaultStyles } from "@/styles";
 import { Stack } from "expo-router";
-import { View } from "react-native";
+import { View, StyleSheet } from "react-native";
 
 const Tab2Layout = () => {
   return (
-    <View style={defaultStyles.container}>
+    <View style={{ flex: 1 }}>
       <Stack>
         <Stack.Screen
           name="index"
@@ -21,4 +20,4 @@ const Tab2Layout = () => {
 
 export default Tab2Layout;
 
-// const styles = StyleSheet.create({});
+const styles = StyleSheet.create({});

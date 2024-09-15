@@ -8,10 +8,12 @@ const _layout = () => {
   return (
     <Tabs
       screenOptions={{
+        tabBarLabelStyle: {
+          fontWeight: "500",
+        },
         headerShown: false,
         tabBarStyle: {
           position: "absolute",
-          borderTopWidth: 0,
         },
         tabBarBackground: () => (
           <BlurView
@@ -19,6 +21,7 @@ const _layout = () => {
             style={{
               ...StyleSheet.absoluteFillObject,
               overflow: "hidden",
+              backgroundColor: "transparent",
             }}
           />
         ),

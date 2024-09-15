@@ -3,25 +3,45 @@ import React from "react";
 import { ThemedText } from "./ThemedText";
 import TextButton from "./TextButton";
 import { Image } from "expo-image";
+import { Colors } from "@/constants/Colors";
+import { useColorScheme } from "@/hooks/useColorScheme";
 
-const AppCard = () => {
+const AppCard = ({
+  appImgUrl = require("@/assets/images/react-logo.png"),
+  title = "A long title",
+  subtitle = "a kinda longer desc over here",
+  action = "Get",
+}: {
+  appImgUrl?: string;
+  title?: string;
+  subtitle?: string;
+  action?: string;
+}) => {
+  const colorScheme = useColorScheme();
+
   return (
     <View style={styles.container}>
       <View>
         <Image
-          source={"@/assets/images/react-logo.png"}
+          source={appImgUrl}
           style={styles.appIcon}
           contentFit="cover"
-          transition={1000}
+          transition={100}
         />
       </View>
       <View style={styles.appText}>
-        <ThemedText type="defaultBold" style={styles.appTitle}>
-          A longer title
-        </ThemedText>
-        <ThemedText style={styles.appSubtitle}>Subtitle</ThemedText>
+        <ThemedText type="defaultBold">{title}</ThemedText>
+        <ThemedText style={styles.appSubtitle}>{subtitle}</ThemedText>
       </View>
-      <TextButton onPress={() => {}} width={50} />
+      <TextButton
+        onPress={() => {}}
+        width={70}
+        hasBorder={false}
+        backgroundColor={Colors[colorScheme ?? "light"].buttonTint}
+        text={action}
+        textColor={Colors[colorScheme ?? "light"].buttonText}
+      />
+      <View style={{ marginRight: 10 }} />
     </View>
   );
 };
@@ -42,13 +62,14 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     borderWidth: 1,
     marginRight: 10,
+    marginLeft: 10,
   },
   appText: {
     flex: 1,
     flexDirection: "column",
     marginRight: 10,
+    minWidth: 150,
   },
-  appTitle: {},
   appSubtitle: {
     color: "#909090",
   },

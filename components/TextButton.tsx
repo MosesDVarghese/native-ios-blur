@@ -8,6 +8,7 @@ import { useColorScheme } from "@/hooks/useColorScheme";
 const TextButton = ({
   onPress,
   width = 150,
+  hasBorder = false,
   borderRadius = 45,
   text = "Button",
   textColor = "",
@@ -15,6 +16,7 @@ const TextButton = ({
 }: {
   onPress: () => void;
   width: number;
+  hasBorder?: boolean;
   borderRadius?: number;
   text?: string;
   textColor?: string;
@@ -24,29 +26,28 @@ const TextButton = ({
   const borderColor = Colors[colorScheme ?? "light"].outlineMedium;
 
   return (
-    <View
+    <TouchableOpacity
       style={[
         styles.container,
         {
-          width: width,
+          minWidth: width,
           borderRadius: borderRadius,
-          borderColor: borderColor,
+          borderColor: hasBorder ? borderColor : backgroundColor,
           backgroundColor: backgroundColor,
         },
       ]}
+      onPress={onPress}
     >
-      <TouchableOpacity onPress={onPress}>
-        <ThemedText
-          type="defaultSemiBold"
-          style={{
-            color:
-              textColor == "" ? Colors[colorScheme ?? "light"].text : textColor,
-          }}
-        >
-          {text}
-        </ThemedText>
-      </TouchableOpacity>
-    </View>
+      <ThemedText
+        type="defaultSemiBold"
+        style={{
+          color:
+            textColor == "" ? Colors[colorScheme ?? "light"].text : textColor,
+        }}
+      >
+        {text}
+      </ThemedText>
+    </TouchableOpacity>
   );
 };
 

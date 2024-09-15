@@ -1,15 +1,17 @@
-import { StackScreenWithSearchBar } from "@/constants/layout";
 import { Stack } from "expo-router";
 import { View, StyleSheet } from "react-native";
 
-const Tab3Layout = () => {
+const Tab1Layout = () => {
   return (
     <View style={{ flex: 1 }}>
       <Stack>
         <Stack.Screen
           name="index"
           options={{
-            ...StackScreenWithSearchBar,
+            headerShown: true,
+            headerLargeTitle: true,
+            headerTransparent: true,
+            headerBlurEffect: "prominent",
             headerTitle: "Apps",
           }}
         />
@@ -18,6 +20,6 @@ const Tab3Layout = () => {
   );
 };
 
-export default Tab3Layout;
+export default Tab1Layout;
 
 const styles = StyleSheet.create({});

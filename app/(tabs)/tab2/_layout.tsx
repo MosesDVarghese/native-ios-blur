@@ -1,8 +1,7 @@
-import { StackScreenWithSearchBar } from "@/constants/layout";
 import { Stack } from "expo-router";
 import { View, StyleSheet } from "react-native";
 
-const Tab2Layout = () => {
+const Tab1Layout = () => {
   return (
     <View style={{ flex: 1 }}>
       <Stack>
@@ -21,6 +20,6 @@ const Tab2Layout = () => {
   );
 };
 
-export default Tab2Layout;
+export default Tab1Layout;
 
 const styles = StyleSheet.create({});

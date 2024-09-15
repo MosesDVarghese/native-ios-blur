@@ -1,5 +1,3 @@
-import { ThemedText } from "@/components/ThemedText";
-import { StackScreenWithSearchBar } from "@/constants/layout";
 import { Stack } from "expo-router";
 import { View, StyleSheet } from "react-native";
 

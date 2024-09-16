@@ -17,13 +17,13 @@ Tab Navigation Options (docs): reactnavigation.org/docs/bottom-tab-navigator/#op
 
 ### Large title / Normal title
 
-<img src="assets/screenshots/p3.PNG" width=200>
-<img src="assets/screenshots/p4.PNG" width=200>
+<img src="assets/screenshots/p3.PNG" width=200> <img src="assets/screenshots/p4.PNG" width=200>
 
 ## Reference Materials
 
 - Stack Screen Options (docs): https://reactnavigation.org/docs/native-stack-navigator/
 - Tab Navigation Options (docs): https://reactnavigation.org/docs/bottom-tab-navigator/#optionshandel
+- Video link: https://www.youtube.com/watch?v=-n7rYj7zThg
 
 # Welcome to your Expo app 👋
 

@@ -7,7 +7,7 @@ const SampleContent = () => {
     <View>
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
-        style={{ paddingHorizontal: 24 }}
+        style={{ paddingHorizontal: 15 }}
       >
         <View style={{ marginTop: 15 }} />
         <ContentCard />

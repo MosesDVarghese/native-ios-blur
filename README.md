@@ -1,14 +1,29 @@
-# Native iOS Blur Effect - React Native
+# iOS Blur Effect - React Native
 
-Desc
+I couldn't find many videos online explaining how to make the blur effect you see on iOS headers and tab navigation bar. It's the default for SwiftUI, but on React Native it requires the knowledge of some built-in options for iOS and the expo blur package.
+
+Note: The header effect will not work on android but the tab bar blur will.
+
+📚 Resources
+Source Code: github.com/MosesDVarghese/native-ios-blur
+Stack Screen Options (docs): reactnavigation.org/docs/native-stack-navigator/
+Tab Navigation Options (docs): reactnavigation.org/docs/bottom-tab-navigator/#optionshandel
 
 ## Sample Images
 
-Images
+### Dark / Light Theme
 
-## Snippets
+<img src="assets/screenshots/p1.PNG" width=200> <img src="assets/screenshots/p2.PNG" width=200>
 
-Snippets
+### Large title / Normal title
+
+<img src="assets/screenshots/p3.PNG" width=200>
+<img src="assets/screenshots/p4.PNG" width=200>
+
+## Reference Materials
+
+- Stack Screen Options (docs): https://reactnavigation.org/docs/native-stack-navigator/
+- Tab Navigation Options (docs): https://reactnavigation.org/docs/bottom-tab-navigator/#optionshandel
 
 # Welcome to your Expo app 👋
 

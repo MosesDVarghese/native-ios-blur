@@ -1,13 +1,8 @@
 # iOS Blur Effect - React Native
 
-Code for iOS blur on header and tab bar navigation.
+Code for iOS blur on header and tab bar navigation, plus some helper components.
 
 Note: The header effect will not work on android but the tab bar blur will.
-
-📚 Resources
-Source Code: github.com/MosesDVarghese/native-ios-blur
-Stack Screen Options (docs): reactnavigation.org/docs/native-stack-navigator/
-Tab Navigation Options (docs): reactnavigation.org/docs/bottom-tab-navigator/#optionshandel
 
 ## Sample Images
 
